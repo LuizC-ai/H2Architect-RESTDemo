@@ -14,14 +14,6 @@ public class GameMinDTO {
     public GameMinDTO() {
     }
 
-    public GameMinDTO(Long id, String title, Integer year, String imgUrl, String shortDescription) {
-        this.id = id;
-        this.title = title;
-        this.year = year;
-        this.imgUrl = imgUrl;
-        this.shortDescription = shortDescription;
-    }
-
     public GameMinDTO(Game entity) {
         id = entity.getId();
         title = entity.getTitle();

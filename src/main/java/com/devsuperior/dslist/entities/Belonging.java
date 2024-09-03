@@ -18,6 +18,10 @@ public class Belonging {
     public Belonging() {
     }
 
+    /* Note que no construtor colocamos como parâmetros o Game e o GameList, para depois ser jogado para o 
+     * BelongingPK. Isso só é feito porque o BelongingPK é uma classe auxiliar que encapsula os atributos game e gamelist.
+     * e para que isto seja possivel, observe que o BelongingPK já está instanciado.
+    */
     public Belonging(Game game, GameList gameList, Integer position) {
         id.setGame(game);
         id.setGameList(gameList);
